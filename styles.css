@@ -94,7 +94,7 @@ li img {
   color: #111;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   ul {
     display: flex;
     flex-direction: column;
@@ -105,5 +105,21 @@ li img {
   }
   li img {
     width: 12rem;
+  }
+
+  #album-description a {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 375px) {
+  main li {
+    display: flex;
+    flex-direction: column;
+    height: 21rem;
+  }
+
+  #album-description a {
+    width: 5rem;
   }
 }
