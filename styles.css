@@ -4,17 +4,27 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  background-color: #111;
+  color: #fff;
 }
 
+main,
 main li,
 #album-description {
   display: flex;
+  align-items: center;
+  width: 100vw;
+}
+
+main {
   justify-content: center;
-  align-content: center;
+  background-color: #222;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80vw;
 }
 
 header {
@@ -39,9 +49,10 @@ header button:hover {
 main li {
   border: 1px solid #111;
   border-radius: 1rem;
-  width: 19vw;
+  width: 25vw;
   height: 20vh;
   margin: 1rem;
+  background-color: #111;
   box-shadow: 5px 6px 9px 0px rgba(0, 0, 0, 0.51);
   -webkit-box-shadow: 5px 6px 9px 0px rgba(0, 0, 0, 0.51);
   -moz-box-shadow: 5px 6px 9px 0px rgba(0, 0, 0, 0.51);
@@ -50,8 +61,7 @@ main li {
 }
 
 main li:hover {
-  background-color: #111;
-  color: #fff;
+  background-color: #ffffff66;
 }
 
 li img {
@@ -62,4 +72,24 @@ li img {
 #album-description {
   margin: 1rem;
   flex-direction: column;
+}
+
+#album-description strong {
+  margin-bottom: 1rem;
+}
+
+#album-description a {
+  border: none;
+  border-radius: 0.5rem;
+  width: 10rem;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgb(0, 112, 248);
+  color: #fff;
+  transition: 1s all;
+}
+
+#album-description a:hover {
+  background-color: #fff;
+  color: #111;
 }
