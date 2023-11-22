@@ -112,6 +112,19 @@ li img {
   }
 }
 
+@media (max-width: 425px) {
+  #album-description {
+    margin: 0;
+  }
+  main li {
+    width: 80vw;
+  }
+
+  #album-description a {
+    width: 5rem;
+  }
+}
+
 @media (max-width: 375px) {
   main li {
     display: flex;
