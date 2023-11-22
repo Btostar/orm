@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   list-style: none;
+  text-align: center;
 }
 
 body {
@@ -91,4 +92,18 @@ li img {
 #album-description a:hover {
   background-color: #fff;
   color: #111;
+}
+
+@media (max-width: 1200px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  main li {
+    width: 80%;
+  }
+  li img {
+    width: 12rem;
+  }
 }
