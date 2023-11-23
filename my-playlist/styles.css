@@ -123,6 +123,10 @@ li img {
   #album-description a {
     width: 5rem;
   }
+
+  li img {
+    width: 8rem;
+  }
 }
 
 @media (max-width: 375px) {
